@@ -41,7 +41,7 @@ export default function GameCard({ game }: { game: Game }) {
       </div>
 
       <div className="mt-6">
-        <GameFormButton game={game.id} label="Enter room" />
+        <GameFormButton game={game.id} label="Fill form" />
       </div>
     </div>
   );
