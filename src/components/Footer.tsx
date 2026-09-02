@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CONTACT } from "../config/contact";
+import yuvapreneurIcon from "../assets/yuvapreneur-icon.png";
 
 export default function Footer() {
   return (
@@ -8,12 +9,11 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span
-                className="flex h-8 w-8 items-center justify-center rounded-lg font-display text-sm font-semibold"
-                style={{ backgroundColor: "var(--orange)", color: "var(--cream)" }}
-              >
-                YP
-              </span>
+              <img
+                src={yuvapreneurIcon}
+                alt="Yuvapreneur 2026 Logo"
+                className="h-8 w-8 shrink-0 object-contain"
+              />
               <span className="font-display text-lg font-semibold">Yuvapreneur.</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>

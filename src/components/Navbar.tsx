@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import yuvapreneurIcon from "../assets/yuvapreneur-icon.png";
 
 const LINKS = [
   { to: "/", label: "Home" },
   { to: "/schedule", label: "Schedule" },
   { to: "/games", label: "Games" },
+  { to: "/rules", label: "Rules" },
+  { to: "/participation", label: "Participation" },
+  { to: "/faqs", label: "FAQs" },
   { to: "/committee", label: "Committee" },
   { to: "/contact", label: "Contact" },
 ];
@@ -20,12 +24,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: "var(--beige)", backgroundColor: "rgba(246,241,228,0.92)", backdropFilter: "blur(6px)" }}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <NavLink to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span
-            className="flex h-9 w-9 items-center justify-center rounded-lg font-display text-sm font-semibold"
-            style={{ backgroundColor: "var(--orange)", color: "var(--cream)" }}
-          >
-            YP
-          </span>
+          <img
+            src={yuvapreneurIcon}
+            alt="Yuvapreneur 2026 Logo"
+            className="h-9 w-9 shrink-0 object-contain"
+          />
           <span className="leading-tight">
             <span className="block font-display text-lg font-semibold" style={{ color: "var(--green)" }}>
               Yuvapreneur

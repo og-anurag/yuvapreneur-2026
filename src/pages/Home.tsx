@@ -1,168 +1,227 @@
 import { Link } from "react-router-dom";
-import { GAMES } from "../data/games";
-import { SCHEDULE } from "../data/schedule";
-import { COMMITTEE } from "../data/committee";
+import yuvapreneurLogo from "../assets/yuvapreneur-logo.png";
+
+const GAMES_PREVIEW = [
+  {
+    number: "01",
+    title: "Flipvert",
+    description: "Turn marketing upside down with creativity, humour and strategic thinking.",
+    team: "Teams of 3",
+  },
+  {
+    number: "02",
+    title: "BrandMobiFlex",
+    description: "Build brands, handle crises and think across cultures.",
+    team: "Teams of 4",
+  },
+  {
+    number: "03",
+    title: "Trash to Treasure",
+    description: "Transform waste materials into something useful, creative and meaningful.",
+    team: "Teams of 4",
+  },
+  {
+    number: "04",
+    title: "Corporate Conquest Quiz",
+    description: "Put your knowledge of brands, founders and businesses to the test.",
+    team: "Teams of 2",
+  },
+];
+
+const QUICK_INFO = [
+  { label: "Event Date", value: "To Be Announced" },
+  { label: "Venue", value: "To Be Announced" },
+  { label: "Format", value: "4 Signature Games" },
+  { label: "Participants", value: "Integrated Program in Management" },
+];
+
+const WHY_PARTICIPATE = [
+  { title: "Creativity", description: "Turn ideas into compelling solutions." },
+  { title: "Teamwork", description: "Collaborate, communicate and perform as a team." },
+  { title: "Strategy", description: "Think fast, adapt and make smart decisions." },
+  { title: "Experience", description: "Challenge yourself in an energetic competitive environment." },
+];
 
 export default function Home() {
   return (
     <div className="page-enter">
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-14 sm:px-8 sm:pt-20">
-        <p className="text-xs font-semibold" style={{ color: "var(--orange-deep)" }}>
-          University of Allahabad · 14 March 2026
-        </p>
-        <h1
-          className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-[1.08] sm:text-6xl"
-          style={{ color: "var(--green)" }}
-        >
-          Bring the idea. Find the people. Make it real.
-        </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed sm:text-lg" style={{ color: "var(--green-soft)" }}>
-          Yuvapreneur 2026 is a one-day student entrepreneurship gathering — four rooms, four ways
-          to test an idea, and a campus full of people building things worth building.
-        </p>
-        <div className="mt-9 flex flex-wrap items-center gap-4">
-          <Link
-            to="/games"
-            className="rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
-            style={{ backgroundColor: "var(--orange)", color: "#fff" }}
-          >
-            Explore the Games →
-          </Link>
-          <Link
-            to="/schedule"
-            className="rounded-full border px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
-            style={{ borderColor: "var(--green)", color: "var(--green)" }}
-          >
-            View Schedule →
-          </Link>
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <span
+              className="inline-block rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide"
+              style={{ borderColor: "var(--orange)", color: "var(--orange-deep)" }}
+            >
+              Event Details Coming Soon
+            </span>
+
+            <p className="mt-6 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--orange-deep)" }}>
+              Yuvapreneur 2026
+            </p>
+            <h1
+              className="mt-3 max-w-xl font-display text-4xl font-semibold leading-[1.1] sm:text-5xl"
+              style={{ color: "var(--green)" }}
+            >
+              Where Ideas Meet Opportunities
+              <span className="block" style={{ color: "var(--orange-deep)" }}>
+                and Passion Turns into Action
+              </span>
+            </h1>
+            <p className="mt-6 max-w-lg text-base leading-relaxed sm:text-lg" style={{ color: "var(--green-soft)" }}>
+              An engaging platform for IPM students to explore creativity, strategy,
+              entrepreneurship and teamwork through four unique challenges.
+            </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-4">
+              <Link
+                to="/games"
+                className="rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+                style={{ backgroundColor: "var(--orange)", color: "#fff" }}
+              >
+                Explore Games
+              </Link>
+              <Link
+                to="/participation"
+                className="rounded-full border px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+                style={{ borderColor: "var(--green)", color: "var(--green)" }}
+              >
+                Participation Guidelines
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <img
+              src={yuvapreneurLogo}
+              alt="Yuvapreneur 2026 Logo"
+              className="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Quick info */}
+      <section className="border-y" style={{ borderColor: "var(--beige)", backgroundColor: "var(--cream-deep)" }}>
+        <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {QUICK_INFO.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border p-5"
+                style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--orange-deep)" }}>
+                  {item.label}
+                </p>
+                <p className="mt-2 font-display text-lg font-semibold" style={{ color: "var(--green)" }}>
+                  {item.value}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* About */}
-      <section className="border-y" style={{ borderColor: "var(--beige)", backgroundColor: "var(--cream-deep)" }}>
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 md:gap-16">
-          <h2 className="font-display text-3xl font-semibold leading-tight sm:text-4xl" style={{ color: "var(--green)" }}>
-            What Yuvapreneur is
-          </h2>
-          <p className="text-base leading-relaxed" style={{ color: "var(--green-soft)" }}>
-            Yuvapreneur is a day built around one question: what would you build if you had a room,
-            a team, and a deadline? Students from across the university step into four different
-            formats — branding, reinvention, sustainability, and business knowledge — each designed
-            to test a different founder muscle. No single background wins here; designers, engineers,
-            marketers, and first-time builders all find a room that fits.
-          </p>
-        </div>
-      </section>
-
-      {/* Highlights */}
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
-        <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--green)" }}>
-          Event highlights
-        </h2>
-        <div className="mt-8 grid gap-5 sm:grid-cols-3">
-          {[
-            { n: "4", label: "Game rooms", d: "Each with its own brief, brief time limit, and judging panel." },
-            { n: "1", label: "Day, on campus", d: "Everything runs across a single day at the University of Allahabad." },
-            { n: "28", label: "Total seats", d: "Across all four rooms combined, first come, first placed." },
-          ].map((h) => (
-            <div key={h.label} className="rounded-2xl border p-6" style={{ borderColor: "var(--beige)" }}>
-              <span className="font-display text-4xl font-semibold" style={{ color: "var(--orange)" }}>{h.n}</span>
-              <p className="mt-2 text-sm font-semibold" style={{ color: "var(--green)" }}>{h.label}</p>
-              <p className="mt-1 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>{h.d}</p>
-            </div>
-          ))}
+        <div className="grid gap-8 md:grid-cols-2 md:gap-16">
+          <h2 className="font-display text-3xl font-semibold leading-tight sm:text-4xl" style={{ color: "var(--green)" }}>
+            About Yuvapreneur
+          </h2>
+          <div>
+            <p className="text-base leading-relaxed" style={{ color: "var(--green-soft)" }}>
+              Yuvapreneur 2026 brings together creativity, business thinking, sustainability and
+              problem-solving through an exciting lineup of team-based challenges. Participants
+              can collaborate, compete and turn ideas into action while experiencing different
+              dimensions of entrepreneurship.
+            </p>
+            <p className="mt-4 font-display text-lg font-semibold" style={{ color: "var(--orange-deep)" }}>
+              Think. Create. Adapt. Compete.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Games preview */}
+      {/* Four games highlight */}
       <section className="border-t" style={{ borderColor: "var(--beige)" }}>
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--green)" }}>
-              Four games, four rooms
-            </h2>
-            <Link to="/games" className="text-sm font-semibold" style={{ color: "var(--orange-deep)" }}>
-              See all games →
-            </Link>
-          </div>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {GAMES.map((g) => (
-              <div key={g.id} className="rounded-2xl border p-5" style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}>
-                <span className="font-display text-2xl font-semibold" style={{ color: "var(--orange)" }}>{g.number}</span>
-                <h3 className="mt-2 font-display text-xl font-semibold" style={{ color: "var(--green)" }}>{g.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>{g.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Schedule preview */}
-      <section style={{ backgroundColor: "var(--cream-deep)" }} className="border-y" >
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8" style={{ borderColor: "var(--beige)" }}>
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--green)" }}>
-              How the day runs
-            </h2>
-            <Link to="/schedule" className="text-sm font-semibold" style={{ color: "var(--orange-deep)" }}>
-              Full schedule →
-            </Link>
-          </div>
-          <div className="mt-8 space-y-0">
-            {SCHEDULE.slice(0, 4).map((s) => (
-              <div
-                key={s.event}
-                className="flex flex-col gap-1 border-t py-4 sm:flex-row sm:items-baseline sm:gap-6"
-                style={{ borderColor: "var(--beige)" }}
-              >
-                <span className="w-24 shrink-0 text-sm font-semibold" style={{ color: "var(--orange-deep)" }}>{s.time}</span>
-                <span className="font-semibold" style={{ color: "var(--green)" }}>{s.event}</span>
-                <span className="text-sm" style={{ color: "var(--green-soft)" }}>{s.venue}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Committee preview */}
-      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
-        <div className="flex flex-wrap items-end justify-between gap-4">
           <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--green)" }}>
-            The people behind it
+            Four Challenges. One Experience.
           </h2>
-          <Link to="/committee" className="text-sm font-semibold" style={{ color: "var(--orange-deep)" }}>
-            Meet the committee →
-          </Link>
-        </div>
-        <div className="mt-8 grid gap-5 sm:grid-cols-3 lg:grid-cols-6">
-          {COMMITTEE.map((m) => (
-            <div key={m.name} className="text-center">
+          <p className="mt-3 max-w-lg text-base leading-relaxed" style={{ color: "var(--green-soft)" }}>
+            Choose your challenge and bring your ideas to life.
+          </p>
+
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {GAMES_PREVIEW.map((g) => (
               <div
-                className="mx-auto flex h-16 w-16 items-center justify-center rounded-full font-display text-lg font-semibold"
-                style={{ backgroundColor: "var(--yellow)", color: "var(--green)" }}
+                key={g.title}
+                className="flex h-full flex-col rounded-2xl border p-5"
+                style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}
               >
-                {m.initials}
+                <span className="font-display text-2xl font-semibold" style={{ color: "var(--orange)" }}>
+                  {g.number}
+                </span>
+                <h3 className="mt-2 font-display text-xl font-semibold" style={{ color: "var(--green)" }}>
+                  {g.title}
+                </h3>
+                <p className="mt-1 flex-1 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>
+                  {g.description}
+                </p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--orange-deep)" }}>
+                  {g.team}
+                </p>
+                <Link
+                  to="/games"
+                  className="mt-4 text-sm font-semibold"
+                  style={{ color: "var(--green)" }}
+                >
+                  View Game →
+                </Link>
               </div>
-              <p className="mt-3 text-sm font-semibold" style={{ color: "var(--green)" }}>{m.name}</p>
-              <p className="text-xs" style={{ color: "var(--green-soft)" }}>{m.role}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="border-t" style={{ borderColor: "var(--beige)" }}>
+      {/* Why participate */}
+      <section style={{ backgroundColor: "var(--cream-deep)" }} className="border-y">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
+          <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--green)" }}>
+            Why Participate?
+          </h2>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {WHY_PARTICIPATE.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border p-6"
+                style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--orange-deep)" }}>
+                  {item.title}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Participation CTA */}
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <div
-          className="mx-auto my-16 max-w-6xl rounded-3xl px-6 py-14 text-center sm:px-12"
+          className="rounded-3xl px-6 py-14 text-center sm:px-12"
           style={{ backgroundColor: "var(--green)" }}
         >
           <h2 className="font-display text-3xl font-semibold sm:text-4xl" style={{ color: "var(--cream)" }}>
-            Ready to pick your room?
+            Ready to Take the Challenge?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed sm:text-base" style={{ color: "var(--beige)" }}>
-            Head to the games page, read what each room involves, and enter through the form when
-            you've found the one for your team.
+            Explore the games, understand the requirements and get your team ready for
+            Yuvapreneur 2026.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -170,16 +229,28 @@ export default function Home() {
               className="rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
               style={{ backgroundColor: "var(--orange)", color: "#fff" }}
             >
-              Explore the Games →
+              Explore Games
             </Link>
             <Link
-              to="/contact"
+              to="/participation"
               className="rounded-full border px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
               style={{ borderColor: "var(--cream)", color: "var(--cream)" }}
             >
-              Talk to us →
+              Participation Guidelines
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Final event status strip */}
+      <section className="border-t" style={{ borderColor: "var(--beige)" }}>
+        <div className="mx-auto max-w-6xl px-5 py-8 text-center sm:px-8">
+          <p className="text-sm font-medium" style={{ color: "var(--green)" }}>
+            Yuvapreneur 2026 event date, timing and venue are currently being finalized.
+          </p>
+          <p className="mt-1 text-sm" style={{ color: "var(--green-soft)" }}>
+            Stay tuned for confirmed updates.
+          </p>
         </div>
       </section>
     </div>

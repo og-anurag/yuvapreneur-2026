@@ -7,6 +7,9 @@ import Schedule from "./pages/Schedule";
 import Games from "./pages/Games";
 import Committee from "./pages/Committee";
 import Contact from "./pages/Contact";
+import Rules from "./pages/Rules";
+import Participation from "./pages/Participation";
+import FAQs from "./pages/FAQs";
 import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
@@ -28,6 +31,9 @@ export default function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/games" element={<Games />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/participation" element={<Participation />} />
+          <Route path="/faqs" element={<FAQs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
