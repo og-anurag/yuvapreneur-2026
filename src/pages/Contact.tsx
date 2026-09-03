@@ -40,33 +40,85 @@ const GAME_CONTACTS: GameContact[] = [
 ];
 
 function formatPhone(phone: string) {
-  // Converts +916392677541 -> +91 6392677541
-  return `${phone.slice(0, 3)} ${phone.slice(3)}`;
+  return phone.slice(0, 3) + " " + phone.slice(3);
 }
 
 export default function Contact() {
   return (
     <div className="page-enter mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
-      <p className="text-xs font-semibold" style={{ color: "var(--orange-deep)" }}>Contact</p>
-      <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl" style={{ color: "var(--green)" }}>
-        Get in Touch
-      </h1>
-      <p className="mt-5 max-w-xl text-base leading-relaxed" style={{ color: "var(--green-soft)" }}>
-        Have a question about Yuvapreneur 2026? Contact the coordinator responsible for the game
-        or reach out to the organizing team.
+      <p
+        className="text-xs font-semibold"
+        style={{ color: "var(--orange-deep)" }}
+      >
+        Contact
       </p>
 
+      <h1
+        className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl"
+        style={{ color: "var(--green)" }}
+      >
+        Get in Touch
+      </h1>
+
+      <p
+        className="mt-5 max-w-xl text-base leading-relaxed"
+        style={{ color: "var(--green-soft)" }}
+      >
+        Have a question about Yuvapreneur 2026? Reach out to us for
+        event-related queries.
+      </p>
+
+      <div
+        className="mt-10 rounded-2xl border p-6 sm:p-7"
+        style={{
+          borderColor: "var(--beige)",
+          backgroundColor: "#fff",
+        }}
+      >
+        <p
+          className="text-xs font-semibold"
+          style={{ color: "var(--orange-deep)" }}
+        >
+          Reach Us
+        </p>
+
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
+          <a href="tel:+919555186112" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+            Call: +91 9555186112
+          </a>
+
+          <a href="tel:+919310628860" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+            Call: +91 9310628860
+          </a>
+
+          <a href="mailto:gautamnikita804@gmail.com" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+            Email: gautamnikita804@gmail.com
+          </a>
+        </div>
+      </div>
+
       <div className="mt-14">
-        <p className="text-xs font-semibold" style={{ color: "var(--orange-deep)" }}>Game Coordinators</p>
+        <p
+          className="text-xs font-semibold"
+          style={{ color: "var(--orange-deep)" }}
+        >
+          Game Coordinators
+        </p>
 
         <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {GAME_CONTACTS.map((entry) => (
             <div
               key={entry.game}
               className="rounded-2xl border p-6 sm:p-7"
-              style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}
+              style={{
+                borderColor: "var(--beige)",
+                backgroundColor: "#fff",
+              }}
             >
-              <h2 className="font-display text-xl font-semibold" style={{ color: "var(--green)" }}>
+              <h2
+                className="font-display text-xl font-semibold"
+                style={{ color: "var(--green)" }}
+              >
                 {entry.game}
               </h2>
 
@@ -77,14 +129,14 @@ export default function Contact() {
                     className="flex items-center justify-between gap-3 border-t pt-3 first:border-t-0 first:pt-0"
                     style={{ borderColor: "var(--beige)" }}
                   >
-                    <span className="text-sm font-medium" style={{ color: "var(--green-soft)" }}>
+                    <span
+                      className="text-sm font-medium"
+                      style={{ color: "var(--green-soft)" }}
+                    >
                       {c.name}
                     </span>
-                    <a
-                      href={`tel:${c.phone}`}
-                      className="text-sm font-semibold transition-transform hover:-translate-y-0.5"
-                      style={{ color: "var(--orange-deep)" }}
-                    >
+
+                    <a href={"tel:" + c.phone} className="text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--orange-deep)" }}>
                       {formatPhone(c.phone)}
                     </a>
                   </div>
@@ -95,23 +147,54 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-14 rounded-2xl border p-6 sm:p-8" style={{ borderColor: "var(--beige)", backgroundColor: "#fff" }}>
-        <p className="text-xs font-semibold" style={{ color: "var(--orange-deep)" }}>Yuvapreneur 2026</p>
-        <p className="mt-3 text-sm font-medium" style={{ color: "var(--green)" }}>University of Allahabad</p>
-        <p className="mt-1 text-sm" style={{ color: "var(--green-soft)" }}>Integrated Program in Management</p>
-        <p className="mt-4 font-display text-lg font-semibold leading-snug" style={{ color: "var(--green)" }}>
-          &ldquo;Where Ideas Meet Opportunities and Passion Turns into Action&rdquo;
+      <div
+        className="mt-14 rounded-2xl border p-6 sm:p-8"
+        style={{
+          borderColor: "var(--beige)",
+          backgroundColor: "#fff",
+        }}
+      >
+        <p
+          className="text-xs font-semibold"
+          style={{ color: "var(--orange-deep)" }}
+        >
+          Yuvapreneur 2026
+        </p>
+
+        <p
+          className="mt-3 text-sm font-medium"
+          style={{ color: "var(--green)" }}
+        >
+          University of Allahabad
+        </p>
+
+        <p
+          className="mt-1 text-sm"
+          style={{ color: "var(--green-soft)" }}
+        >
+          Integrated Program in Management
+        </p>
+
+        <p
+          className="mt-4 font-display text-lg font-semibold leading-snug"
+          style={{ color: "var(--green)" }}
+        >
+          Where Ideas Meet Opportunities and Passion Turns into Action
         </p>
 
         <div
           className="mt-6 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold"
-          style={{ borderColor: "var(--orange)", color: "var(--orange-deep)" }}
+          style={{
+            borderColor: "var(--orange)",
+            color: "var(--orange-deep)",
+          }}
         >
           <span
             className="h-1.5 w-1.5 rounded-full"
             style={{ backgroundColor: "var(--orange)" }}
           />
-          Stay Tuned — Event details are being finalized
+
+          Event details are being finalized. Stay tuned for further updates.
         </div>
       </div>
     </div>

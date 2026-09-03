@@ -44,7 +44,7 @@ const STUDENT_COMMITTEE = [
   {
     name: "Ujjwal",
     programme: "IPM",
-    semester: "6th Semester",
+    semester: "5th Semester",
     initials: "U",
   },
   {
