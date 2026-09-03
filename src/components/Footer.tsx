@@ -21,7 +21,6 @@ export default function Footer() {
               make it real.
             </p>
           </div>
-
           <div>
             <h3 className="text-sm font-semibold" style={{ color: "var(--green)" }}>
               Find your way
@@ -33,18 +32,22 @@ export default function Footer() {
               <li><Link to="/contact" className="hover:opacity-70">Contact</Link></li>
             </ul>
           </div>
-
           <div>
             <h3 className="text-sm font-semibold" style={{ color: "var(--green)" }}>
               Reach us
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm" style={{ color: "var(--green-soft)" }}>
               <li><a href={`mailto:${CONTACT.email}`} className="hover:opacity-70">{CONTACT.email}</a></li>
-              <li><a href={`tel:${CONTACT.phone}`} className="hover:opacity-70">{CONTACT.phone}</a></li>
+              {CONTACT.phones.map((phone) => (
+                <li key={phone}>
+                  <a href={`tel:${phone.replace(/\s/g, "")}`} className="hover:opacity-70">
+                    Call: {phone}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-
         <div
           className="mt-12 flex flex-col gap-2 border-t pt-6 text-xs sm:flex-row sm:items-center sm:justify-between"
           style={{ borderColor: "var(--beige)", color: "var(--green-soft)" }}
