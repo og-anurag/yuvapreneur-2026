@@ -1,8 +1,13 @@
 const FACULTY_COORDINATORS = [
   {
-    name: "Dr. Honey Gupta",
+    name: "Happyson Gachuiwo",
     role: "Event Coordinator",
     initials: "HG",
+  },
+  {
+    name: "Dr. Bhavana Srivastava",
+    role: "Event Coordinator",
+    initials: "BS",
   },
   {
     name: "Prof. (Dr.) G.B.S. Johri",
@@ -24,7 +29,7 @@ const STUDENT_COMMITTEE = [
     initials: "AG",
   },
   {
-    name: "Priya",
+    name: "Priya Kumari",
     programme: "IPM",
     semester: "7th Semester",
     initials: "P",
