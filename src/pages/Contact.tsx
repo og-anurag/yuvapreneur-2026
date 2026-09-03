@@ -68,6 +68,7 @@ export default function Contact() {
         event-related queries.
       </p>
 
+      {/* General Contact */}
       <div
         className="mt-10 rounded-2xl border p-6 sm:p-7"
         style={{
@@ -83,20 +84,43 @@ export default function Contact() {
         </p>
 
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
-          <a href="tel:+919555186112" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+          <a
+            href="tel:+919555186112"
+            className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+            style={{ color: "var(--green)" }}
+          >
             Call: +91 9555186112
           </a>
 
-          <a href="tel:+919310628860" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+          <a
+            href="tel:+919310628860"
+            className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+            style={{ color: "var(--green)" }}
+          >
             Call: +91 9310628860
           </a>
 
-          <a href="mailto:gautamnikita804@gmail.com" className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--green)" }}>
+          <a
+            href="mailto:gautamnikita804@gmail.com"
+            className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+            style={{ color: "var(--green)" }}
+          >
             Email: gautamnikita804@gmail.com
+          </a>
+
+          <a
+            href="https://www.instagram.com/yuvapreneur2026/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm font-semibold transition-transform hover:-translate-y-0.5"
+            style={{ color: "var(--green)" }}
+          >
+            Instagram: @yuvapreneur2026
           </a>
         </div>
       </div>
 
+      {/* Game Coordinators */}
       <div className="mt-14">
         <p
           className="text-xs font-semibold"
@@ -136,7 +160,11 @@ export default function Contact() {
                       {c.name}
                     </span>
 
-                    <a href={"tel:" + c.phone} className="text-sm font-semibold transition-transform hover:-translate-y-0.5" style={{ color: "var(--orange-deep)" }}>
+                    <a
+                      href={"tel:" + c.phone}
+                      className="text-sm font-semibold transition-transform hover:-translate-y-0.5"
+                      style={{ color: "var(--orange-deep)" }}
+                    >
                       {formatPhone(c.phone)}
                     </a>
                   </div>
@@ -147,6 +175,7 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* Event Information */}
       <div
         className="mt-14 rounded-2xl border p-6 sm:p-8"
         style={{
