@@ -1,7 +1,7 @@
-// Editable contact details. Replace placeholders with real information.
+// Editable contact details.
 export const CONTACT = {
-  email: "yuvapreneur@allduniv.edu.in",
-  phone: "+91 90000 00000",
+  email: "gautamnikita804@gmail.com",
+  phone: "+91 9555186112",
   social: [
     { label: "Instagram", url: "https://instagram.com/yuvapreneur" },
     { label: "LinkedIn", url: "https://linkedin.com/company/yuvapreneur" },
