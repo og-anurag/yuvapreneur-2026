@@ -1,7 +1,7 @@
 const QUICK_INFO = [
   { label: "Date", value: "To Be Announced" },
   { label: "Time", value: "09:45 AM – 05:00 PM" },
-  { label: "Venue", value: "To Be Announced" },
+  { label: "Venue", value: "Rajashekhar Hall, MONIRBA, University of Allahabad" },
 ];
 
 interface ScheduleEntry {

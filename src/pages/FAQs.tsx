@@ -23,7 +23,7 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: "Where is Yuvapreneur 2026 being organized?",
         answer:
-          "The event venue is currently being finalized. Confirmed venue details will be announced by the organizing team.",
+          "The venue is Rajashekhar Hall, MONIRBA, University of Allahabad. The event date will be announced soon.",
       },
       {
         question: "When will Yuvapreneur 2026 take place?",

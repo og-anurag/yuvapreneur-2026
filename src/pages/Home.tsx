@@ -30,7 +30,7 @@ const GAMES_PREVIEW = [
 
 const QUICK_INFO = [
   { label: "Event Date", value: "To Be Announced" },
-  { label: "Venue", value: "To Be Announced" },
+  { label: "Venue", value: "Rajashekhar Hall, MONIRBA, University of Allahabad" },
   { label: "Format", value: "4 Signature Games" },
   { label: "Participants", value: "Integrated Program in Management" },
 ];
