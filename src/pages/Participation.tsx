@@ -196,8 +196,7 @@ export default function Participation() {
           Important Reminder
         </div>
         <p className="mt-4 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>
-           Event date and timing are still 2 November 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad. Please stay tuned for confirmed Yuvapreneur 2026 updates.
-          confirmed Yuvapreneur 2026 updates.
+           Event date: 2 November 2026. Form filling last date: 25 October 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.
         </p>
       </div>
 

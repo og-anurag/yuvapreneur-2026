@@ -30,6 +30,7 @@ const GAMES_PREVIEW = [
 
 const QUICK_INFO = [
   { label: "Event Date", value: "2 November 2026" },
+  { label: "Form Filling Last Date", value: "25 October 2026" },
   { label: "Venue", value: "Rajashekhar Hall, MONIRBA, University of Allahabad" },
   { label: "Format", value: "4 Signature Games" },
   { label: "Participants", value: "Integrated Program in Management" },
@@ -246,10 +247,10 @@ export default function Home() {
       <section className="border-t" style={{ borderColor: "var(--beige)" }}>
         <div className="mx-auto max-w-6xl px-5 py-8 text-center sm:px-8">
           <p className="text-sm font-medium" style={{ color: "var(--green)" }}>
-            Yuvapreneur 2026 event date, timing and venue are currently being finalized.
+            Yuvapreneur 2026 will be held on 2 November 2026.
           </p>
           <p className="mt-1 text-sm" style={{ color: "var(--green-soft)" }}>
-            Stay tuned for confirmed updates.
+            Form filling closes on 25 October 2026.
           </p>
         </div>
       </section>

@@ -16,7 +16,7 @@ const GENERAL_RULES: string[] = [
   "The organizers are not responsible for personal belongings lost or damaged during the event.",
   "Participants should not damage university property or event equipment.",
   "The organizers reserve the right to modify event rules if necessary and will communicate any important changes.",
-  "Event date and timing will be announced separately. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.",
+  "Event date: 2 November 2026. Form filling last date: 25 October 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.",
 ];
 
 const FAIR_PLAY: string[] = [
@@ -239,9 +239,7 @@ export default function Rules() {
           Important Notice
         </div>
         <p className="mt-4 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>
-          Event date and timing are still 2 November 2026. Venue: Rajashekhar Hall, MONIRBA,
-          University of Allahabad. Please stay tuned to the official Yuvapreneur 2026 website and
-          organizing team for confirmed updates.
+          Event date: 2 November 2026. Form filling last date: 25 October 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.
         </p>
       </div>
     </div>

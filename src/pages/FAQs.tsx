@@ -23,12 +23,12 @@ const FAQ_SECTIONS: FaqSection[] = [
       {
         question: "Where is Yuvapreneur 2026 being organized?",
         answer:
-          "The venue is Rajashekhar Hall, MONIRBA, University of Allahabad. The event date will be announced soon.",
+          "The venue is Rajashekhar Hall, MONIRBA, University of Allahabad. The event will be held on 2 November 2026.",
       },
       {
         question: "When will Yuvapreneur 2026 take place?",
         answer:
-          "The event date and timings are currently being finalized. Please stay tuned for the confirmed schedule.",
+          "The event will take place on 2 November 2026. Please follow the official website for any schedule updates.",
       },
       {
         question: "Who can participate?",
