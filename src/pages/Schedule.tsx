@@ -1,5 +1,5 @@
 const QUICK_INFO = [
-  { label: "Date", value: "To Be Announced" },
+  { label: "Date", value: "2 November 2026" },
   { label: "Time", value: "09:45 AM – 05:00 PM" },
   { label: "Venue", value: "Rajashekhar Hall, MONIRBA, University of Allahabad" },
 ];
