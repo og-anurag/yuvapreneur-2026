@@ -27,7 +27,7 @@ const GAME_CONTACTS: GameContact[] = [
     game: "Trash to Treasure",
     coordinators: [
       { name: "Priya", phone: "+919310628860" },
-      { name: "Vinay", phone: "+916392677541" },
+      { name: "Anjali", phone: "+919555186112" },
     ],
   },
   {
