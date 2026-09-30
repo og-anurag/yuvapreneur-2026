@@ -223,7 +223,7 @@ export default function Contact() {
             style={{ backgroundColor: "var(--orange)" }}
           />
 
-          Event date: 2 November 2026. Form filling last date: 25 October 2026.
+          Event date: 2 November 2026. Last Date To Apply: 25 October 2026.
         </div>
       </div>
     </div>

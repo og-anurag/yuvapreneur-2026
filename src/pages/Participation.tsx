@@ -196,7 +196,7 @@ export default function Participation() {
           Important Reminder
         </div>
         <p className="mt-4 text-sm leading-relaxed" style={{ color: "var(--green-soft)" }}>
-           Event date: 2 November 2026. Form filling last date: 25 October 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.
+           Event date: 2 November 2026. Last Date To Apply: 25 October 2026. Venue: Rajashekhar Hall, MONIRBA, University of Allahabad.
         </p>
       </div>
 

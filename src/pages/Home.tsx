@@ -30,7 +30,7 @@ const GAMES_PREVIEW = [
 
 const QUICK_INFO = [
   { label: "Event Date", value: "2 November 2026" },
-  { label: "Form Filling Last Date", value: "25 October 2026" },
+  { label: "Last Date To Apply", value: "25 October 2026" },
   { label: "Venue", value: "Rajashekhar Hall, MONIRBA, University of Allahabad" },
   { label: "Format", value: "4 Signature Games" },
   { label: "Participants", value: "Integrated Program in Management" },
