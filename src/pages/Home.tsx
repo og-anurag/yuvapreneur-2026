@@ -51,11 +51,23 @@ export default function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <span
-              className="inline-block rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide"
-              style={{ borderColor: "var(--orange)", color: "var(--orange-deep)" }}
-            >
-              Event Details Coming Soon
-            </span>
+  className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-wider shadow-lg transition-all duration-300 hover:scale-105"
+  style={{
+    borderColor: "var(--orange)",
+    color: "var(--orange-deep)",
+    background: "rgba(255, 255, 255, 0.08)",
+    boxShadow: "0 0 12px rgba(255, 140, 0, 0.35)",
+  }}
+>
+  <span
+    className="h-2 w-2 animate-pulse rounded-full"
+    style={{
+      backgroundColor: "var(--orange)",
+      boxShadow: "0 0 8px var(--orange)",
+    }}
+  />
+  Registration Open
+</span>
 
             <p className="mt-6 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--orange-deep)" }}>
               Yuvapreneur 2026
